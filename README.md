@@ -2,7 +2,9 @@
 << RESTful WEB API service using .Net Core 2.1  >>
 
 This application is a RESTful WEB API service using .Net Core 2.1.
+
 The architecture consists of Controllers, Services, Repositories and a Database.
+
 This application also uses Entity Framework Core in order to access the database so that the Context folder is created for
  the DbContext.
 -.Net Core, needs to set up the database connection in the appsetting.json and Startup.cs, which means, no need for Web.config.
