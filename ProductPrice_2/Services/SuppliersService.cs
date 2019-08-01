@@ -22,9 +22,6 @@ namespace ProductPrice_2.Services
             try{
                 IEnumerable<Supplier> suppList = await _repo.GetAllSuppliersAsync();
                 if(suppList != null){
-                    //return new OkObjectResult(suppList.Select(s => new SupplierViewModel
-                    //{ Id = s.SupplierId, Name = s.Name })
-                    //);
                     var list = suppList.Select(s => new SupplierViewModel
                     {
                         Id = s.SupplierId,
